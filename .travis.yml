@@ -1,23 +1,19 @@
 language: php
-
 php:
-  - 7.1
-
+- 7.1
 services:
-  - mysql
-  -
+- mysql
+- 
 cache:
   directories:
-    - $HOME/.composer/cache
-
-
+  - "$HOME/.composer/cache"
 before_script:
-  - composer install --no-progress --no-interaction --prefer-dist --no-suggest
-  - mysql -e 'CREATE DATABASE homestead;'
-  - cp .env.travis .env.testing
-
-script:
-
-
+- composer install --no-progress --no-interaction --prefer-dist --no-suggest
+- mysql -e 'CREATE DATABASE homestead;'
+- cp .env.travis .env.testing
+script: 
 notifications:
   email: false
+env:
+  global:
+    secure: YDBFrKmgNSYDLiA5qLodXvdmgbST/TaJSb0rBLj+HvfvM4uUfVV4dwJ9usSKAY6cucSyGD7bS21TwX9s2m5P6SJPUHOkjiB/A+tszPtKEWUDFL+gLEiPPYzOXJJ1DySUGSIHZw7IXgbkpbRaQKRKANYnzYcs+P+cD8qcT2K3qTbCZeEVohs0np/nhLWEHOt7ugDldwUl+5YTkbmktpDNsmipvj1g0OQPUx1kVaK5vWHXa+6ZvP00p9w9qGqUG3D0Ji1XwyQS+LduZW+DMItKNExIsd4siguq0trUCWC15sIaK/wo57PnsJRXpOigwyHvIy+uyfDX+GdYHdHm+v6mDinGXo/w3UG6ovx6ODpdw6Un/8zbejuJYdzp2fZWxWXBMxUOi+5Zv3HYRgMzTYxblbe8dsK/CeeezYMPbwghd81D83zKifjd6PTzDy47AgGDemXl1eAGsy1VET/XPmrJebEYrYNB1Kmg0zEc1ubwdodADuEyKi8C0H7k6ims9WPOEU/1F/yibWEzB+pEI7N32fz2+aQeYms8Ckpj6ZpVXMQ25XIX+i1nm79hQPtq0mdFmqj2VJ1spGc+acSNk5dphX8l3VACLtdldGGNkb7fCGfYwivAv2P6KRlCug47oKvFYBut2+V+JZsJOd0XF1zs+6kOG6Fc4IE+7AILVARqjX8=
