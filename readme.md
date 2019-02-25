@@ -7,7 +7,7 @@ Tindify est une application communautaire basé sur la musique
 Mise en place du deployment continu sur Heroku avec Travis.
 Un utilisateur pourra créer son compte en précisant:
 1. Informations
-    Son nom,
+   - Son nom,
    - Son prénom,
    - Son age,
    - Son sexe,
