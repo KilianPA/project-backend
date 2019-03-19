@@ -25,10 +25,11 @@ class UserService
     }
 
     public function create ($request) {
-        $this->user->name = $request['name'];
-        $this->user->password = $request['password'];
-        $this->user->email =$request['email'];
-        $this->user->save();
+        $request['password'] = bcrypt($request['password']);
+        if (isset($data['avatar'])) {
+            $this->user->addMediaFromRequest('avatar')->toMediaCollection('avatars');
+        }
+        $this->user->create($request);
     }
 
 }

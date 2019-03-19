@@ -22,8 +22,12 @@ class UserController extends Controller
         return $this->userService->getById($id);
     }
 
-    public function store (StoreUser $request) {
-        var_dump($request->validated());
-        $this->userService->create($request->validated());
+    public function store (Request $request) {
+        $this->userService->create($request->all());
+    }
+
+    public function storeAvatar (Request $request) {
+        $data = ($request->all());
+        var_dump($data['avatar']);
     }
 }
