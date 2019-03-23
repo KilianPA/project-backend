@@ -36,6 +36,7 @@ Algorithme de match
 - Inscription utilisateur,
 - Authentification de l'utilisateur
 - Mise en place du deployment continu sur Heroku avec Travis.
+- Gestion des photos avec Firebase Store
 
 ## Mardi 23 avril ( à distance )
 
