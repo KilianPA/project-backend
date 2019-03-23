@@ -33,9 +33,9 @@ Algorithme de match
 
 ## Lundi 25 mars après-midi ( sur place )
 
-Inscription utilisateur,
-Authentification de l'utilisateur
-Mise en place du deployment continu sur Heroku avec Travis.
+- Inscription utilisateur,
+- Authentification de l'utilisateur
+- Mise en place du deployment continu sur Heroku avec Travis.
 
 ## Mardi 23 avril ( à distance )
 
