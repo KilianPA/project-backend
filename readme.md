@@ -2,8 +2,6 @@
 
 Tindify est une application communautaire basé sur la musique
 
-## Lundi 25 mars après-midi ( sur place )
-
 Mise en place du deployment continu sur Heroku avec Travis.
 Un utilisateur pourra créer son compte en précisant:
 1. Informations
@@ -23,11 +21,21 @@ Un utilisateur pourra créer son compte en précisant:
 - Un utilisateur peut matcher ou non avec un autre utilisateur
 - Un utilisateur peut converser avec un autre utilisateur dès lors que les deux ont matché
 
+Système de chat entre 2 utilisateurs.
+
+Gestion de l’api Spotify
+
 Authentification
 
 - Un utilisateur se connecte à l'api et reçois un bearer token d'authentification.
 
-Test unitiaires
+Algorithme de match
+
+## Lundi 25 mars après-midi ( sur place )
+
+Inscription utilisateur,
+Authentification de l'utilisateur
+Mise en place du deployment continu sur Heroku avec Travis.
 
 ## Mardi 23 avril ( à distance )
 
@@ -43,6 +51,8 @@ Gestion de l’api Spotify
 Gestion de l'api Google Maps
 
 - On recupère les informations et les coordonnées d'une ville pour estimer la distance entre 2 personnes
+
+Test unitaires
 
 ## Jeudi 23 Mai ( à distance )
 
