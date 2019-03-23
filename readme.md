@@ -15,7 +15,6 @@ Un utilisateur pourra créer son compte en précisant:
    - Ses 3 chansons préférées
    - Son artiste préféré
    - Son style / Ses styles préférés
-   - Année préféré
 
 - Un utilisateur peut modifier son compte.
 - Un utilisateur peut matcher ou non avec un autre utilisateur
