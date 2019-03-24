@@ -25,6 +25,9 @@ class UserController extends Controller
     public function store (Request $request) {
         $this->userService->create($request->all());
     }
+    public function update (Request $request) {
+        $this->userService->update($request->all());
+    }
 
     public function storeAvatar (Request $request) {
         $data = ($request->all());

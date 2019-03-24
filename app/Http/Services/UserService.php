@@ -32,4 +32,10 @@ class UserService
         $this->user->create($request);
     }
 
+    public function update ($request) {
+        $user = $this->user::find($request['id']);
+        $request['password'] = bcrypt($request['password']);
+        $user->update($request);
+    }
+
 }

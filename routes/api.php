@@ -32,5 +32,6 @@ Route::group([
         Route::get('/users/{id}', 'UserController@get');
         Route::get('logout', 'AuthController@logout');
         Route::get('user', 'AuthController@user');
+        Route::put('users', 'UserController@update');
     });
 });
