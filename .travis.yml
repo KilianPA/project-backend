@@ -22,4 +22,5 @@ branches:
   only:
     - dev
     - release
+    - master
 

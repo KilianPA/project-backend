@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e37f2839-354f-45f7-80dc-ed5e2fb1f858" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,9 +18,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../front/src/components/User/UserCreate.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="50" column="51" lean-forward="true" selection-start-line="50" selection-start-column="51" selection-end-line="57" selection-end-column="31" />
+            <state relative-caret-position="-612">
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
               <folding>
+                <element signature="n#style#0;n#input#0;n#div#0;n#q-card#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="e#8357#8394#0" expanded="true" />
                 <element signature="e#8634#9400#0" />
                 <element signature="e#12547#12659#0" />
@@ -33,7 +34,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../front/src/components/Spotify/SpotifySearch.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
+            <state relative-caret-position="1155">
               <caret line="115" column="21" lean-forward="true" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
             </state>
           </provider>
@@ -42,12 +43,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../front/src/components/User/UserEdit.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="278" selection-start-line="278" selection-end-line="282" selection-end-column="3" />
+            <state relative-caret-position="1778">
+              <caret line="247" column="29" selection-start-line="247" selection-start-column="29" selection-end-line="247" selection-end-column="29" />
               <folding>
+                <element signature="n#style#0;n#input#0;n#div#0;n#q-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="e#5098#5148#0" expanded="true" />
                 <element signature="e#3070#3140#0" />
-                <element signature="e#6302#7787#0" />
               </folding>
             </state>
           </provider>
@@ -81,27 +82,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../front/src/store/spotify/actions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="29" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../front/src/router/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../front/src/router/routes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -110,11 +90,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../front/quasar.conf.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="-201">
               <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../front/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -139,6 +137,11 @@
       <find>container-spotify</find>
       <find>bottom</find>
       <find>spotify</find>
+      <find>hide-un</find>
+      <find>firebase</find>
+      <find>fire</find>
+      <find>fir</find>
+      <find>hide-underline</find>
     </findStrings>
     <replaceStrings>
       <replace>slider</replace>
@@ -155,12 +158,10 @@
       <list>
         <option value="$PROJECT_DIR$/../front/README.md" />
         <option value="$PROJECT_DIR$/../front/Procfile" />
-        <option value="$PROJECT_DIR$/../front/.travis.yml" />
         <option value="$PROJECT_DIR$/../front/web-start" />
         <option value="$PROJECT_DIR$/../front/server.js" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/config/cors.php" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_27_151818_artist.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_27_132640_music.php" />
         <option value="$PROJECT_DIR$/database/seeds/UserSeeder.php" />
@@ -200,9 +201,11 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Services/UserService.php" />
-        <option value="$PROJECT_DIR$/../front/src/components/User/UserEdit.vue" />
-        <option value="$PROJECT_DIR$/../front/src/components/User/UserCreate.vue" />
         <option value="$PROJECT_DIR$/../front/src/components/Spotify/SpotifySearch.vue" />
+        <option value="$PROJECT_DIR$/../front/src/components/User/UserCreate.vue" />
+        <option value="$PROJECT_DIR$/../front/src/components/User/UserEdit.vue" />
+        <option value="$PROJECT_DIR$/../front/.travis.yml" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/../front/quasar.conf.js" />
       </list>
     </option>
@@ -353,14 +356,7 @@
               <item name="backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="front" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Spotify" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -437,7 +433,7 @@
       <workItem from="1551083582314" duration="113000" />
       <workItem from="1551426742834" duration="794000" />
       <workItem from="1551533417299" duration="835000" />
-      <workItem from="1551605816796" duration="67044000" />
+      <workItem from="1551605816796" duration="74664000" />
     </task>
     <servers />
   </component>
@@ -462,11 +458,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111045000" />
+    <option name="totallyTimeSpent" value="118665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22161172" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -646,20 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../front/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../front/.env.example">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -815,23 +796,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../front/src/components/Spotify/SpotifySearch.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="115" column="21" lean-forward="true" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../front/src/components/User/UserEdit.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="278" selection-start-line="278" selection-end-line="282" selection-end-column="3" />
+        <state relative-caret-position="1778">
+          <caret line="247" column="29" selection-start-line="247" selection-start-column="29" selection-end-line="247" selection-end-column="29" />
           <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#q-card#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="e#5098#5148#0" expanded="true" />
             <element signature="e#3070#3140#0" />
-            <element signature="e#6302#7787#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../front/src/components/User/UserCreate.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="50" column="51" lean-forward="true" selection-start-line="50" selection-start-column="51" selection-end-line="57" selection-end-column="31" />
+        <state relative-caret-position="-612">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
           <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#q-card#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="e#8357#8394#0" expanded="true" />
             <element signature="e#8634#9400#0" />
             <element signature="e#12547#12659#0" />
@@ -840,17 +836,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../front/src/components/Spotify/SpotifySearch.vue">
+    <entry file="file://$PROJECT_DIR$/../front/quasar.conf.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="115" column="21" lean-forward="true" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
+        <state relative-caret-position="-201">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../front/quasar.conf.js">
+    <entry file="file://$PROJECT_DIR$/../front/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        <state relative-caret-position="119">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>
