@@ -1,1 +1,1 @@
-rm .env && composer install && php artisan migrate:fresh && php artisan passport:install && vendor/bin/heroku-php-apache2 public/
+rm .env && composer install && php artisan migrate:fresh && php artisan db:seed && php artisan passport:install && vendor/bin/heroku-php-apache2 public/
