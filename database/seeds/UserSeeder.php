@@ -1,3 +1,4 @@
+
 <?php
 
 use Faker\Factory;
@@ -13,7 +14,22 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
+
+
+
         $faker = Factory::create();
+        $image = 'image'. 4 . '.jpeg';
+        DB::table('users')->insert([
+            'avatar' => $image,
+            'name' => $faker->name,
+            'surname' => $faker->firstName,
+            'birthday' => $faker->date(),
+            'email' => 'admin@admin.fr',
+            'gender' => 'male',
+            'orientation' => json_encode(['male']),
+            'city' => $faker->address,
+            'password' => bcrypt('secret'),
+        ]);
         for ($i = 1; $i <= 25; $i++) {
         $gender = $faker->randomElement(['male', 'female']);
         $image = 'image'. $i . '.jpeg';
