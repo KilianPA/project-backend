@@ -31,6 +31,7 @@ Route::group([
         Route::get('users', 'UserController@index');
         Route::get('/users/{id}', 'UserController@get');
         Route::post('/getusers', 'UserController@getManyUsers');
+        Route::post('/chats', 'ChatController@index');
         Route::get('/chat/{id}', 'ChatController@get');
         Route::get('logout', 'AuthController@logout');
         Route::get('user', 'AuthController@user');

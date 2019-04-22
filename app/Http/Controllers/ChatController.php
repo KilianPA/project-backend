@@ -11,6 +11,11 @@ class ChatController extends Controller
     {
         $this->chatService = $chatService;
     }
+
+    public function index () {
+        return $this->chatService->chat::all();
+    }
+
     public function get ($id) {
         return $this->chatService->getById($id);
     }
