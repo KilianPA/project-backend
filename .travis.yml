@@ -16,7 +16,7 @@ cache:
 before_script:
 - composer install --no-progress --no-interaction --prefer-dist --no-suggest
 - mysql -e 'CREATE DATABASE homestead;'
-- cp .env.travis .env
+#- cp .env.travis .env
 - composer self-update
 - composer install --no-interaction
 - php artisan key:generate
