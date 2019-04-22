@@ -20,7 +20,7 @@ use Illuminate\Http\Request;
 
 Route::group([
 ], function () {
-    Route::post('login', 'AuthController@login');
+    Route::post('login', 'AuthController@login')->name('login');
     Route::post('signup', 'AuthController@signup');
     Route::post('/users', 'UserController@store');
     Route::post('/avatar', 'UserController@storeAvatar');
@@ -30,6 +30,8 @@ Route::group([
     ], function() {
         Route::get('users', 'UserController@index');
         Route::get('/users/{id}', 'UserController@get');
+        Route::post('/getusers', 'UserController@getManyUsers');
+        Route::get('/chat/{id}', 'ChatController@get');
         Route::get('logout', 'AuthController@logout');
         Route::get('user', 'AuthController@user');
         Route::put('users', 'UserController@update');

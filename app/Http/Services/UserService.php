@@ -38,4 +38,12 @@ class UserService
         $user->update($request);
     }
 
+    public function getManyUsers ($arrayId) {
+        $array = [];
+        foreach ($arrayId as $id) {
+            array_push($array, $this->user::find($id));
+        }
+        return $array;
+    }
+
 }

@@ -33,4 +33,8 @@ class UserController extends Controller
         $data = ($request->all());
         var_dump($data['avatar']);
     }
+
+    public function getManyUsers (Request $request) {
+        return $this->userService->getManyUsers($request->all());
+    }
 }
