@@ -48,14 +48,11 @@ Gestion de l’api Spotify
 - On récupère les listes des genres
 - On récupère les chansons par années
 
-Gestion de l'api Google Maps
-
-- On recupère les informations et les coordonnées d'une ville pour estimer la distance entre 2 personnes
-
 Test unitaires
 
 ## Jeudi 23 Mai ( à distance )
 
+Gestion de l'api de google maps
 
 Algorithme de match
 
