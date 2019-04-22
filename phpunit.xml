@@ -23,15 +23,11 @@
         </whitelist>
     </filter>
     <php>
-        <env name="APP_ENV" value="testing"/>
-        <env name="DB_DATABASE" value="homestead"/>
-        <env name="DB_USERNAME" value="travis"/>
-        <env name="DB_PASSWORD" value=""/>
-        <env name="DB_HOST" value="127.0.0.1"/>
-        <env name="DB_CONNECTION" value="mysql"/>
-        <env name="CACHE_DRIVER" value="array"/>
-        <env name="MAIL_DRIVER" value="array"/>
+        <env name="APP_ENV" value="staging"/>
+        <env name="APP_DEBUG" value="true"/>
+        <env name="DB_CONNECTION" value="sqlite"/>
+        <env name="CACHE_DRIVER" value="file"/>
         <env name="QUEUE_CONNECTION" value="sync"/>
-        <env name="SESSION_DRIVER" value="array"/>
+        <env name="SESSION_DRIVER" value="file"/>
     </php>
 </phpunit>
