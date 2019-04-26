@@ -40,6 +40,7 @@ Algorithme de match
 ## Mardi 23 avril ( à distance )
 
 Système de chat entre 2 utilisateurs.
+https://onedrive.live.com/?authkey=%21AMjgoRI4jQBHlS0&cid=90BD15A6ED9F3F25&id=90BD15A6ED9F3F25%217577&parId=90BD15A6ED9F3F25%21195&o=OneUp
 
 Gestion de l’api Spotify
 
