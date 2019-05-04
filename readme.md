@@ -45,7 +45,7 @@ https://onedrive.live.com/?authkey=%21AMjgoRI4jQBHlS0&cid=90BD15A6ED9F3F25&id=90
 Gestion de l’api Spotify
 
 L'utilisateur peut choisir son artiste préféré et ses musiques préférées lors de l'inscription :
-https://onedrive.live.com/?cid=90BD15A6ED9F3F25&id=90BD15A6ED9F3F25%217578&parId=root&o=OneUp
+https://1drv.ms/v/s!AiU_n-2mFb2Quxq-Um8XxZ7eg-j0
 
 Test unitaires
 
