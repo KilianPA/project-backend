@@ -44,10 +44,8 @@ https://onedrive.live.com/?authkey=%21AMjgoRI4jQBHlS0&cid=90BD15A6ED9F3F25&id=90
 
 Gestion de l’api Spotify
 
-- On récupère une chanson via une requête à l'api.
-- On récupère la bio d'un artiste
-- On récupère les listes des genres
-- On récupère les chansons par années
+L'utilisateur peut choisir son artiste préféré et ses musiques préférées lors de l'inscription :
+https://onedrive.live.com/?cid=90BD15A6ED9F3F25&id=90BD15A6ED9F3F25%217578&parId=root&o=OneUp
 
 Test unitaires
 
