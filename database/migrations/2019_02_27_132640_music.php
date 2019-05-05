@@ -15,11 +15,8 @@ class Music extends Migration
     {
         Schema::create('users_music', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('id_music_spotify')->nullable();
-            $table->string('id_artist_spotify')->nullable();
-            $table->string('image')->nullable();
-            $table->string('sound')->nullable();
+            $table->string('field');
+            $table->json('music_data', 2550)->nullable();
             $table->unsignedInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
