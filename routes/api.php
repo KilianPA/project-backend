@@ -33,6 +33,7 @@ Route::group([
         Route::get('/music/{id}', 'MusicController@index');
         Route::post('/getusers', 'UserController@getManyUsers');
         Route::post('/chats', 'ChatController@index');
+        Route::post('/match', 'MatchController@create');
         Route::get('/chat/{id}', 'ChatController@get');
         Route::get('logout', 'AuthController@logout');
         Route::get('user', 'AuthController@user');

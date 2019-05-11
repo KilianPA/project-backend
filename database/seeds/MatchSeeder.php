@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class ChatSeeder extends Seeder
+class MatchSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,6 +15,10 @@ class ChatSeeder extends Seeder
         for ($i = 1; $i <= 25; $i++) {
             $sender = rand(2, 50);
             $receiver = rand(2, 50);
+            DB::table('matches')->insert([
+                'sender_id' => $sender,
+                'receiver_id' => $receiver,
+            ]);
             DB::table('chats')->insert([
                 'sender_id' => $sender,
                 'receiver_id' => $receiver,

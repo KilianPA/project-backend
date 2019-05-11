@@ -27,7 +27,7 @@ class UserSeeder extends Seeder
             'email' => 'admin@admin.fr',
             'gender' => 'male',
             'orientation' => json_encode(['male']),
-            'city' => $faker->address,
+            'city' => $faker->city,
             'password' => bcrypt('secret'),
         ]);
         for ($i = 1; $i <= 25; $i++) {
