@@ -60,4 +60,31 @@ class UserService
         return $array;
     }
 
+    public function getMatchedUsers ($id) {
+        $users = [];
+        $currentUser = $this->user::find($id)->first();
+        $genresUser = json_decode($this->music->music::where('user_id', $id)->first()->genres);
+        $orientaions = json_decode($this->user::find($id)->orientation);
+        foreach ($orientaions as $orientation) {
+            array_push($users, $this->user::where('gender', $orientation)->take(20)->get());
+        }
+        $usersFinal = [];
+        foreach ($users[0] as $user) {
+            $genres = json_decode($this->music->music::where('user_id', $user->id)->first()->genres);
+            $result = array_intersect($genresUser, $genres);
+            if ($result) {
+                array_push($usersFinal, $user);
+            }
+
+        }
+        return $usersFinal;
+        $usersFinal1 = [];
+//        foreach ($usersFinal as $user) {
+//            $json = file_get_contents('https://fr.distance24.org/route.json?stops=' . $currentUser->city . '|' . $user->city);
+//            $distance = json_decode($json)->distances[0];
+//               if ($distance < 80) {
+//                   array_push($usersFinal1, $user);
+//               }
+//        }
+    }
 }

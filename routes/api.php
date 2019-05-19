@@ -30,6 +30,7 @@ Route::group([
     ], function() {
         Route::get('users', 'UserController@index');
         Route::get('/users/{id}', 'UserController@get');
+        Route::get('/usersMatch/{id}', 'UserController@getMatchedUsers');
         Route::get('/music/{id}', 'MusicController@index');
         Route::post('/getusers', 'UserController@getManyUsers');
         Route::post('/chats', 'ChatController@index');

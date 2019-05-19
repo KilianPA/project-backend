@@ -19,19 +19,21 @@ class UserSeeder extends Seeder
 
         $faker = Factory::create();
         $image = 'image'. 4 . '.jpeg';
+        $city = $faker->randomElement(['Nice', 'Lille', 'Paris', 'Saint-Quentin', 'Rennes', 'Reims', 'Tours', 'Lyon', 'Marseille', 'Cannes']);
         DB::table('users')->insert([
             'avatar' => $image,
             'name' => $faker->name,
             'surname' => $faker->firstName,
             'birthday' => $faker->date(),
             'email' => 'admin@admin.fr',
-            'gender' => 'male',
-            'orientation' => json_encode(['male']),
-            'city' => $faker->city,
+            'gender' => 'Homme',
+            'orientation' => json_encode(['Homme']),
+            'city' => $city,
             'password' => bcrypt('secret'),
         ]);
         for ($i = 1; $i <= 25; $i++) {
-        $gender = $faker->randomElement(['male', 'female']);
+        $gender = $faker->randomElement(['Homme', 'Femme']);
+        $city = $faker->randomElement(['Nice', 'Lille', 'Paris', 'Saint-Quentin', 'Rennes', 'Reims', 'Tours', 'Lyon', 'Marseille', 'Cannes']);
         $image = 'image'. $i . '.jpeg';
             DB::table('users')->insert([
                 'avatar' => $image,
@@ -39,14 +41,15 @@ class UserSeeder extends Seeder
                 'surname' => $faker->firstName,
                 'birthday' => $faker->date(),
                 'email' => $faker->email,
-                'gender' => 'male',
+                'gender' => 'Homme',
                 'orientation' => json_encode([$gender]),
-                'city' => $faker->address,
+                'city' => $city,
                 'password' => bcrypt('secret'),
             ]);
         }
         for ($i = 1; $i <= 25; $i++) {
-        $gender = $faker->randomElement(['male', 'female']);
+            $city = $faker->randomElement(['Nice', 'Lille', 'Paris', 'Saint-Quentin', 'Rennes', 'Reims', 'Tours', 'Lyon', 'Marseille', 'Cannes']);
+        $gender = $faker->randomElement(['Homme', 'Femme']);
         $image = 'image'. (25 + $i) . '.jpeg';
             DB::table('users')->insert([
                 'avatar' => $image,
@@ -54,9 +57,9 @@ class UserSeeder extends Seeder
                 'surname' => $faker->firstName,
                 'birthday' => $faker->date(),
                 'email' => $faker->email,
-                'gender' => 'female',
+                'gender' => 'Femme',
                 'orientation' => json_encode([$gender]),
-                'city' => $faker->address,
+                'city' => $city,
                 'password' => bcrypt('secret'),
             ]);
         }

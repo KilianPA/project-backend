@@ -37,4 +37,8 @@ class UserController extends Controller
     public function getManyUsers (Request $request) {
         return $this->userService->getManyUsers($request->all());
     }
+
+    public function getMatchedUsers ($id) {
+        return $this->userService->getMatchedUsers($id);
+    }
 }

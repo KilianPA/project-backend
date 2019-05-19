@@ -26,6 +26,10 @@ class MusicService
         $array['user_id'] = $id;
         $array['field'] = $type;
         $array['music_data'] = $data;
+        echo $type;
+        if ($type == 'artist') {
+            $array['genres'] = (json_encode(json_decode($array['music_data'])->genres));
+        }
         $this->music->create($array);
     }
 
