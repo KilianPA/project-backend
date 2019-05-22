@@ -51,12 +51,13 @@ Test unitaires
 
 ## Jeudi 23 Mai ( à distance )
 
-Gestion de l'api de google maps
+Utilisation d'une api pour gérer les distances entre 2 villes
 
 Algorithme de match
 
-L'algorithme va se baser sur la localisation, le style, l'artiste, le genre, ses précédents match etc (a définir)..
+L'algorithme va se baser sur la localisation, le style, l'artiste, le genre, l'age etc..
 
+Vidéo match : https://drive.google.com/open?id=1sLr38IAKhzGTLat0sN-_zP71q8LAOB_4
 
 Test unitiaires
 
