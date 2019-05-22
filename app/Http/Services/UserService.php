@@ -11,6 +11,7 @@ namespace App\Http\Services;
 
 use App\Music;
 use App\User;
+use DateTime;
 use Faker\Factory;
 
 class UserService
@@ -63,6 +64,10 @@ class UserService
     public function getMatchedUsers ($id) {
         $users = [];
         $currentUser = $this->user::find($id)->first();
+        $date = new DateTime($currentUser->birthday);
+        $now = new DateTime();
+        $interval = $now->diff($date);
+        $ageUser =  $interval->y;
         $genresUser = json_decode($this->music->music::where('user_id', $id)->first()->genres);
         $orientaions = json_decode($this->user::find($id)->orientation);
         foreach ($orientaions as $orientation) {
@@ -70,21 +75,30 @@ class UserService
         }
         $usersFinal = [];
         foreach ($users[0] as $user) {
+            $date = new DateTime($user->birthday);
+            $now = new DateTime();
+            $interval = $now->diff($date);
+            $age =  $interval->y;
+// CHECK DU MATCH AVEC LA MUSIQUE
             $genres = json_decode($this->music->music::where('user_id', $user->id)->first()->genres);
             $result = array_intersect($genresUser, $genres);
             if ($result) {
-                array_push($usersFinal, $user);
+                // CHECK DE L'INTERVALLE D'AGE ENTRE 5 ANS
+                echo $age . ' ' . $ageUser;
+                if ($age < $ageUser + 5 && $age > $ageUser - 5) {
+                    array_push($usersFinal, $user);
+                }
             }
-
         }
-        return $usersFinal;
         $usersFinal1 = [];
-//        foreach ($usersFinal as $user) {
-//            $json = file_get_contents('https://fr.distance24.org/route.json?stops=' . $currentUser->city . '|' . $user->city);
-//            $distance = json_decode($json)->distances[0];
-//               if ($distance < 80) {
-//                   array_push($usersFinal1, $user);
-//               }
-//        }
+        // CHECK QUE LA DISTANCE ENTRE LES 2 PERSONNES SOIS DE 20 KM
+        foreach ($usersFinal as $user) {
+            $json = file_get_contents('https://fr.distance24.org/route.json?stops=' . $currentUser->city . '|' . $user->city);
+            $distance = json_decode($json)->distances[0];
+               if ($distance < 20) {
+                   array_push($usersFinal1, $user);
+               }
+        }
+        return $usersFinal1;
     }
 }
