@@ -17,6 +17,7 @@ class CreateMatchesTable extends Migration
             $table->increments('id');
             $table->integer('sender_id')->unsigned()->nullable();
             $table->integer('receiver_id')->unsigned()->nullable();
+            $table->boolean('is_matched');
         });
         Schema::table('matches', function (Blueprint $table){
             $table->foreign('sender_id')

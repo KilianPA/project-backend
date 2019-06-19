@@ -17,10 +17,11 @@ use Faker\Factory;
 class UserService
 {
 
-    public function __construct(User $user, MusicService $music)
+    public function __construct(User $user, MusicService $music, MatchService $match)
     {
         $this->user = $user;
         $this->music = $music;
+        $this->match = $match;
     }
 
     public function getById($id) {
@@ -71,9 +72,10 @@ class UserService
         $genresUser = json_decode($this->music->music::where('user_id', $id)->first()->genres);
         $orientaions = json_decode($this->user::find($id)->orientation);
         foreach ($orientaions as $orientation) {
-            array_push($users, $this->user::where('gender', $orientation)->take(20)->get());
+            array_push($users, $this->user::where('gender', $orientation)->where('id', '!=', $currentUser->id)->take(20)->get());
         }
         $usersFinal = [];
+
         foreach ($users[0] as $user) {
             $date = new DateTime($user->birthday);
             $now = new DateTime();
@@ -84,8 +86,8 @@ class UserService
             $result = array_intersect($genresUser, $genres);
             if ($result) {
                 // CHECK DE L'INTERVALLE D'AGE ENTRE 5 ANS
-                echo $age . ' ' . $ageUser;
-                if ($age < $ageUser + 5 && $age > $ageUser - 5) {
+//                echo $age . ' ' . $ageUser;
+                if ($age < $ageUser + 50 && $age > $ageUser - 50) {
                     array_push($usersFinal, $user);
                 }
             }
@@ -93,12 +95,22 @@ class UserService
         $usersFinal1 = [];
         // CHECK QUE LA DISTANCE ENTRE LES 2 PERSONNES SOIS DE 20 KM
         foreach ($usersFinal as $user) {
-            $json = file_get_contents('https://fr.distance24.org/route.json?stops=' . $currentUser->city . '|' . $user->city);
-            $distance = json_decode($json)->distances[0];
-               if ($distance < 20) {
-                   array_push($usersFinal1, $user);
-               }
+            $matchedSender = ($this->match->match::where([['sender_id', '=', $user->id], ['receiver_id', '=', $id]])->get());
+            $matchedReceiver = ($this->match->match::where([['receiver_id', '=', $user->id], ['sender_id', '=', $id]])->get());
+            if (!sizeof($matchedSender) && !sizeof($matchedReceiver)) {
+                array_push($usersFinal1, $user);
+            }
         }
+
+        $usersFinal2 = [];
+        // CHECK QUE LA DISTANCE ENTRE LES 2 PERSONNES SOIS DE 20 KM
+//        foreach ($usersFinal1 as $user) {
+//            $json = file_get_contents('https://fr.distance24.org/route.json?stops=' . $currentUser->city . '|' . $user->city);
+//            $distance = json_decode($json)->distances[0];
+//               if ($distance < 20) {
+//                   array_push($usersFinal2, $user);
+//               }
+//        }
         return $usersFinal1;
     }
 }

@@ -8,6 +8,6 @@ class Match extends Model
 {
     public $timestamps = false;
     protected $fillable = [
-        'sender_id', 'receiver_id'
+        'sender_id', 'receiver_id', 'is_matched'
     ];
 }
