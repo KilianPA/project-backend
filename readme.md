@@ -63,6 +63,9 @@ Test unitiaires
 
 ## Vendredi 21 Juin ( sur place)
 
+Amélioration design
+Match en BDD
+
 <<<<<<< HEAD
 Test unitiaires
 =======
